@@ -1202,40 +1202,40 @@ export class StaticCanvas {
 	/**
 	 * Sets {@link fabric.StaticCanvas#overlayImage|overlay image} for this canvas
 	 * @param {(fabric.Image|String)} image fabric.Image instance or URL of an image to set overlay to
-	 * @param {Function} callback callback to invoke when image is loaded and set as an overlay
+	 * @param {Function} [callback] Optional callback to invoke when image is loaded and set as an overlay
 	 * @param {Object} [options] Optional options to set for the {@link fabric.Image|overlay image}.
 	 * @return {fabric.Canvas} thisArg
 	 * @chainable
 	 */
-	setOverlayImage(image: Image | string, callback: Function, options?: IImageOptions): Canvas;
+	setOverlayImage(image: Image | string, callback?: Function, options?: IImageOptions): Canvas;
 
 	/**
 	 * Sets {@link fabric.StaticCanvas#backgroundImage|background image} for this canvas
 	 * @param {(fabric.Image|String)} image fabric.Image instance or URL of an image to set background to
-	 * @param {Function} callback Callback to invoke when image is loaded and set as background
+	 * @param {Function} [callback] Optional callback to invoke when image is loaded and set as background
 	 * @param {Object} [options] Optional options to set for the {@link fabric.Image|background image}.
 	 * @return {fabric.Canvas} thisArg
 	 * @chainable
 	 */
-	setBackgroundImage(image: Image | string, callback: Function, options?: IImageOptions): Canvas;
+	setBackgroundImage(image: Image | string, callback?: Function, options?: IImageOptions): Canvas;
 
 	/**
 	 * Sets {@link fabric.StaticCanvas#overlayColor|foreground color} for this canvas
 	 * @param {(String|fabric.Pattern)} overlayColor Color or pattern to set foreground color to
-	 * @param {Function} callback Callback to invoke when foreground color is set
+	 * @param {Function} [callback] Optional callback to invoke when foreground color is set
 	 * @return {fabric.Canvas} thisArg
 	 * @chainable
 	 */
-	setOverlayColor(overlayColor: string | Pattern, callback: Function): Canvas;
+	setOverlayColor(overlayColor: string | Pattern, callback?: Function): Canvas;
 
 	/**
 	 * Sets {@link fabric.StaticCanvas#backgroundColor|background color} for this canvas
 	 * @param {(String|fabric.Pattern)} backgroundColor Color or pattern to set background color to
-	 * @param {Function} callback Callback to invoke when background color is set
+	 * @param {Function} [callback] Optional callback to invoke when background color is set
 	 * @return {fabric.Canvas} thisArg
 	 * @chainable
 	 */
-	setBackgroundColor(backgroundColor: string | Pattern | Gradient, callback: Function): Canvas;
+	setBackgroundColor(backgroundColor: string | Pattern | Gradient, callback?: Function): Canvas;
 
 	/**
 	 * Returns canvas width (in px)
